@@ -2,6 +2,8 @@ html,
 body {
   margin: 0px;
   font-family: "Rubik", sans-serif;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .welcome_text h4 {
@@ -17,6 +19,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 3%;
+    
+    
     
 }
 
