@@ -1,0 +1,23 @@
+a {
+  color: black;
+  text-decoration: none important;
+}
+
+
+.card-body{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 400px;
+  }
+  
+  #articles-container{
+  width: 80%;
+  padding-top: 5%;
+  margin: auto;
+  }
+
+  .basic{
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }

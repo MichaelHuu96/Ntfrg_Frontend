@@ -1,0 +1,56 @@
+
+a {
+  color: black;
+  text-decoration: none!important;
+}
+
+
+.card{
+  width: auto;
+}
+
+.righttext{
+  text-align: right;
+}
+
+.ui-loader-default{
+    color: rgba(0,0,0,0);
+}
+
+.basic{
+  text-decoration: none !important;
+  color: #383838;
+  color: inherit; 
+  
+}
+
+.basic:hover {
+  color:  #383838;
+}
+
+
+
+.card-body{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 400px;
+}
+
+.article-container{
+
+width: 60%;
+position: relative;
+margin: auto;
+margin-top: 5%;
+
+
+justify-content: center;
+padding: 2%;
+}
+
+.btn-container{
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+}
+

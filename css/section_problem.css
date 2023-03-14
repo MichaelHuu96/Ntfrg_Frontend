@@ -1,0 +1,38 @@
+#section_problem{
+    height: 100vh;
+    width: 100vw;
+}
+
+.top_trasition_bar{
+    width:100vw;
+    height: 17%;
+    position: relative;
+    background-color: rgb(109, 109, 109);
+}
+
+.problem_header_text {
+    height: auto;
+    max-width: 600px; /* adjust this value as needed */
+    margin: 0 auto;
+    margin-top: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center
+
+  }
+
+  .problem_content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  .problem_element{
+    max-width: 325px;
+    height: auto;
+
+  }
+.problem_element{
+    margin: 3%;
+}

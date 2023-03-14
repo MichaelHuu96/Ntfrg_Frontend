@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@openai/api@0.6.3"></script>
+    <link rel="stylesheet" href="../css/navbar_aritcles_page.css">
+    <link rel="stylesheet" href="../css/article.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="header" id="header">
+        <nav class="navbar container ">
+            <a href="../index.html" class="brand">NTGRF</a>
+            <div class="burger" id="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
+            <div class="menu" id="menu">
+                <ul class="menu-inner">
+                    <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Feature</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Product</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Support</a></li>
+                </ul>
+            </div>
+            <a href="#" class="menu-block">Discover</a>
+        </nav>
+    </header>
+    <div class="top_trasition_bar"></div>
+    <div class="article-container">
+        <h2 id="article-title"></h2>
+        <h4 id="article-author"></h4>
+        <p id="article-date"></p>
+        <p id="article-summary"></p>
+        <p id="article-content"></p>
+    </div>
+
+    <div class="btn-container">
+        <button type="button" class="btn btn-dark">Summarize</button>
+        <button type="button" class="btn btn-dark" onclick="translate()">Translate</button>
+    </div>
+
+    <script src="../javascript/articles/articlepage.js"></script>
+
+</body>
+
+</html>
