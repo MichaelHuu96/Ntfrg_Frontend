@@ -4,6 +4,7 @@ body {
   font-family: sans-serif !important;
   width: 100vw;
   overflow-x: hidden;
+
 }
 
 .welcome_text h1{
@@ -23,9 +24,11 @@ body {
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 3%;
+  
     
-    
+    display: flex;           /* make the outer div a flex container */
+  justify-content: center; /* center the inner div horizontally */
+  align-items: center;     /* center the inner div vertically */
     
 }
 
@@ -43,6 +46,7 @@ body {
     text-align: left;
     height: 100vh;
     color: aliceblue;
+    height: auto;
   }
 
   .welcome_image{
@@ -50,6 +54,7 @@ position: relative;
     top: 50%;
     left: 70%;
     transform: translate(-50%, -50%);
+    height: auto;
     
   
   }

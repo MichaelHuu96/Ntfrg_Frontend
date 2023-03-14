@@ -1,7 +1,7 @@
 
 #section_about_us{
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     background-color:#303030;
     padding: 1%;
 }
@@ -21,7 +21,7 @@
 }
 
 .member_image {
-    max-width: 300px;
+    max-width: 200px;
     width: 100%;
     height: auto;
     box-shadow:2px 2px 4px #000000;
@@ -38,5 +38,22 @@
 
     .memberprofile{
         color:white;
-        text-align: left;
+        text-align: center;
+    
+        padding: 2%;
+        
+        display: flex;           /* make the outer div a flex container */
+        justify-content: center; /* center the inner div horizontally */
+        align-items: center;     /* center the inner div vertically */
+    }
+
+    .membercard{
+        position: relatives;
+        width: 70%;
+        margin: 10px;
+        text-align: center;
+        
+        padding: 20px;
+        background-color: rgb(39, 50, 60);
+        box-shadow: 30px -16px rgb(0, 65, 65);
     }
