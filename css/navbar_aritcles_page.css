@@ -73,7 +73,7 @@ button {
   padding-bottom: 0.4%;
 }
 .header.on-scroll {
-  margin: 0%;
+  padding-top: 0%;
   background: var(--color-black-300);
   box-shadow: var(--shadow-medium);
 }

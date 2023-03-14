@@ -52,5 +52,40 @@ padding: 2%;
   position: fixed;
   right: 5%;
   bottom: 5%;
+ max-width: 150px;
 }
 
+.button_style{
+  margin: 3px;
+  text-align: center;
+}
+
+@media screen  and (max-width: 824px){
+  .btn-container{
+    position: fixed;
+    right: 0%;
+    bottom: 5%;
+    max-width: 150px;
+   
+  }
+}
+
+@media screen  and (max-width: 654px){
+  .btn-container {
+    bottom: 14px;
+    position: fixed;
+    left: 50%;
+    height: 40px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .button_style{
+    margin: 0px;
+    text-align: center;
+   
+  }
+  
+}

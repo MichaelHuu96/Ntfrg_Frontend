@@ -12,9 +12,6 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@openai/api@0.6.3"></script>
     <link rel="stylesheet" href="../css/navbar_aritcles_page.css">
     <link rel="stylesheet" href="../css/article.css">
@@ -26,7 +23,7 @@
 
     <header class="header" id="header">
         <nav class="navbar container ">
-            <a href="../index.html" class="brand">NTGRF</a>
+            <a href="../index.html" class="brand" target="_self">NTGRF</a>
             <div class="burger" id="burger">
                 <span class="burger-line"></span>
                 <span class="burger-line"></span>
@@ -36,13 +33,16 @@
                 <ul class="menu-inner">
                     <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
                     <li class="menu-item"><a href="#" class="menu-link">Feature</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Product</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">About us</a>
+                    </li>
                     <li class="menu-item"><a href="#" class="menu-link">Support</a></li>
                 </ul>
             </div>
-            <a href="#" class="menu-block">Discover</a>
+
         </nav>
     </header>
+
+
     <div class="top_trasition_bar"></div>
     <div class="article-container">
         <h2 id="article-title"></h2>
@@ -53,12 +53,14 @@
     </div>
 
     <div class="btn-container">
-        <button type="button" class="btn btn-dark">Summarize</button>
-        <button type="button" class="btn btn-dark" onclick="translate()">Translate</button>
+        <button id="original-btn" button type="button" class="btn btn-dark button_style col">Original</button>
+        <button id="summarize-btn" type="button" class="btn btn-dark button_style col">Summarize</button>
+        <button id="translate-btn" button type="button" class="btn btn-dark button_style col">Translate</button>
+
     </div>
 
     <script src="../javascript/articles/articlepage.js"></script>
-
+    <script src="../javascript/header.js"></script>
 </body>
 
 </html>

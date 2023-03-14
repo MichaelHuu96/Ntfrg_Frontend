@@ -18,3 +18,56 @@ fetch('articles.json')
   })
   .catch(error => console.error(error));
 
+
+const sumbtn = document.getElementById('summarize-btn');
+
+const content = document.getElementById('article-content');
+
+sumbtn.addEventListener('click', function() {
+  fetch('articles.json')
+  .then(response => response.json())
+  .then(data => {
+    const article = data.articles.find(a => a.ID === articleId);
+    if(article.summarize==""){
+      console.log(article.summarize);
+      return;
+    }
+    content.textContent = article.summarize;
+    document.getElementById('article-title').textContent = article.title_eng;
+
+  })
+
+});
+
+const transbtn = document.getElementById('translate-btn');
+
+
+transbtn.addEventListener('click', function() {
+  fetch('articles.json')
+  .then(response => response.json())
+  .then(data => {
+    const article = data.articles.find(a => a.ID === articleId);
+    if (!article.translate) {
+      return; // return if translate is empty
+    }
+    content.textContent = article.translate;
+    document.getElementById('article-title').textContent = article.title_eng;
+  })
+});
+
+const originalbtn = document.getElementById('original-btn');
+
+
+originalbtn.addEventListener('click', function() {
+  fetch('articles.json')
+  .then(response => response.json())
+  .then(data => {
+    const article = data.articles.find(a => a.ID === articleId);
+    content.textContent = article.content;
+    document.getElementById('article-title').textContent = article.title;
+
+  })
+
+});
+
+
