@@ -66,11 +66,12 @@ button {
   z-index: 100;
   width: 100%;
   height: auto;
-  margin: 1% auto;
+  margin: 0% auto;
   transition: all 0.35s ease;
+  padding-top: 1%;
 }
 .header.on-scroll {
-  margin: 0%;
+  padding-top: 0%;
   background: var(--color-black-300);
   box-shadow: var(--shadow-medium);
 }
