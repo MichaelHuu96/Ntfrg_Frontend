@@ -2,9 +2,13 @@
 #section_about_us{
     width: 100vw;
     min-height: 100vh;
-    background-color:#303030;
     padding: 1%;
+    background-color: #303030;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)),url("../Asset/E_About_us/background.jpg");
+    position: relative;
+    background-blend-mode: multiply;
 }
+
 
 
 .about_us_header_text{
@@ -30,7 +34,7 @@
 
 .about_us_content{
         flex-direction: column;
-        justify-content: center;
+        justify-content: center; 
         text-align: center;
         max-width: 70%; /* adjust this value as needed */
         margin: 0 auto;
