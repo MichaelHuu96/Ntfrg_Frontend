@@ -2,18 +2,22 @@ a {
   color: black;
   text-decoration: none important;
 }
-
+body{
+  padding-top: 100px;
+}
 
 .card-body{
     overflow: hidden;
     text-overflow: ellipsis;
-    height: 400px;
+    height: auto;
+min-width: 30vw;
   }
   
   #articles-container{
   width: 80%;
-  padding-top: 5%;
   margin: auto;
+
+  
   }
 
   .basic{
@@ -21,3 +25,64 @@ a {
     display: flex;
     justify-content: center;
   }
+
+  .article_card{
+    margin: 20px;
+  }
+
+  .card-text{
+    max-height:100px ;
+    overflow: hidden;
+  }
+
+  .search_bar{
+    margin-top: 5rem;
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .card-footer{
+    flex-direction: row;
+  }
+
+  .date_text{
+    width: auto;
+  }
+
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-left p {
+    margin-right: 10px;
+  }
+  
+  .footer-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-right span {
+    margin-left: 10px;
+  }
+
+  .catergory_tag{
+    margin: 1px;
+    width: auto;
+    height: auto;
+    font-size: 12px;
+   
+  }
+
+  .card{
+    max-height: fit-content;
+  }
+
