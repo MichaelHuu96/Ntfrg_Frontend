@@ -1,9 +1,11 @@
 
+let articledata;
+
 
 fetch('articles.json')
   .then(response => response.json())
   .then(data => {
-    articledata = data;
+    articledata = data.articles;
     const articlesContainer = document.getElementById('articles-container');
     data.articles.forEach(article => {
       const articleCard = document.createElement('div');
@@ -14,8 +16,6 @@ fetch('articles.json')
           tagsHTML += `<a href="#" class="btn btn-secondary btn-lg  category_tag" role="button" >${article.tags[i]}</a>`;
         }
       }
-
-
       articleCard.innerHTML = `
       
 
@@ -43,6 +43,8 @@ fetch('articles.json')
       `;
       articlesContainer.appendChild(articleCard);
     });
+
+  
   })
   .catch(error => console.error(error));
 
@@ -116,3 +118,56 @@ window.location.href = "article.html?id=" + inspected_article.ID;
   }
   
 
+  const searchInput = document.querySelector('#search-input');
+
+  searchInput.addEventListener('input', () => {
+    const searchText = searchInput.value.trim();
+    search_article(searchText);
+  });
+
+
+  function search_article(searchText) {
+    console.log(searchText);
+  
+    const articlesContainer = document.getElementById('articles-container');
+    articlesContainer.innerHTML = '';
+    articledata.forEach(article => {
+
+      if (article.title.toLowerCase().includes(searchText.toLowerCase()) || 
+      article.tags.some(tag => tag.toLowerCase().includes(searchText.toLowerCase()))) {
+      const articleCard = document.createElement('div');
+      articleCard.className = 'col-12';
+      let tagsHTML = ''; // initialize empty string for tags
+      if (article.tags.length > 0) { // check if tags exist
+        for (let i = 0; i < article.tags.length; i++) {
+          tagsHTML += `<a href="#" class="btn btn-secondary btn-lg  category_tag" role="button" >${article.tags[i]}</a>`;
+        }
+      }
+      articleCard.innerHTML = `
+      
+
+      <a  class="basic" onclick="inspect_article('${article.ID}')">
+
+
+          <div id="card-${article.ID}" class="card ">
+            <div class="card-body ">
+              <h4 class="card-title">${article.title}</h4>
+              <h6 class="card-subtitle mb-2 text-muted">${article.author}</h6>
+              <p id="card-text-${article.ID}" class="card-text">${article.content}</p>
+            </div>
+            <div class="card-footer">
+              <div class="footer-left">
+                <p class="date_text">March 17, 2023</p>
+              </div>
+              <div class="footer-right">
+                <div id="tag-container">
+                  ${tagsHTML} 
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      `;
+      articlesContainer.appendChild(articleCard);
+    }});
+  }
