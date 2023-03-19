@@ -1,21 +1,25 @@
 
 let articledata;
 
-
+function clearfilter(){
 fetch('articles.json')
   .then(response => response.json())
   .then(data => {
     articledata = data.articles;
+
     const articlesContainer = document.getElementById('articles-container');
+    articlesContainer.innerHTML = '';
     data.articles.forEach(article => {
       const articleCard = document.createElement('div');
       articleCard.className = 'col-12';
       let tagsHTML = ''; // initialize empty string for tags
       if (article.tags.length > 0) { // check if tags exist
         for (let i = 0; i < article.tags.length; i++) {
-          tagsHTML += `<a href="#" class="btn btn-secondary btn-lg  category_tag" role="button" >${article.tags[i]}</a>`;
+            tagsHTML += `<a class="btn btn-secondary btn-lg category_tag" role="button" onclick="searchtags('${article.tags[i]}')">${article.tags[i]}</a>`;
         }
-      }
+    }
+    
+    
       articleCard.innerHTML = `
       
 
@@ -48,7 +52,7 @@ fetch('articles.json')
   })
   .catch(error => console.error(error));
 
-
+}
   var inspected_article = ""; 
 
   function inspect_article(id) {
@@ -96,26 +100,49 @@ window.location.href = "article.html?id=" + inspected_article.ID;
 }
 
 
-  function changeCardTextHeight(article) {
-    const cardTextonid = document.getElementById("card-text-"+article.ID);
-    const cardText = document.getElementById("card-text-"+article.ID);
-    const cardBodies = document.querySelectorAll(".card");
-    const cardID =document.getElementById("card-"+article.ID);
+function searchtags(searchtag){
+  console.log(searchtag);
+  const articlesContainer = document.getElementById('articles-container');
+  articlesContainer.innerHTML = '';
+  articledata.forEach(article => {
 
-    if (cardTextonid) {
-      cardTextonid.style.height = "auto";
-      cardTextonid.style.maxHeight = "none";
-      // for (let i = 0; i < cardBodies.length; i++) {
-
-      //   console.log("current: " + cardBodies[i].style.width)
-      //   cardBodies[i].style.width = "30vw";
-      //   console.log("changed width of " + cardBodies[i]);
-      //   console.log("to: " + cardBodies[i].style.width)
-
-      // }
+    if ( article.tags.some(tag => tag.toLowerCase().includes(searchtag.toLowerCase()))) {
+    const articleCard = document.createElement('div');
+    articleCard.className = 'col-12';
+    let tagsHTML = ''; // initialize empty string for tags
+    if (article.tags.length > 0) { // check if tags exist
+      for (let i = 0; i < article.tags.length; i++) {
+        tagsHTML += `<a href="#" class="btn btn-secondary btn-lg  category_tag" role="button" >${article.tags[i]}</a>`;
+      }
     }
+    articleCard.innerHTML = `
+    
 
-  }
+    <a  class="basic" onclick="inspect_article('${article.ID}')">
+
+
+        <div id="card-${article.ID}" class="card ">
+          <div class="card-body ">
+            <h4 class="card-title">${article.title}</h4>
+            <h6 class="card-subtitle mb-2 text-muted">${article.author}</h6>
+            <p id="card-text-${article.ID}" class="card-text">${article.content}</p>
+          </div>
+          <div class="card-footer">
+            <div class="footer-left">
+              <p class="date_text">March 17, 2023</p>
+            </div>
+            <div class="footer-right">
+              <div id="tag-container">
+                ${tagsHTML} 
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    `;
+    articlesContainer.appendChild(articleCard);
+  }});
+}
   
 
   const searchInput = document.querySelector('#search-input');
@@ -171,3 +198,5 @@ window.location.href = "article.html?id=" + inspected_article.ID;
       articlesContainer.appendChild(articleCard);
     }});
   }
+
+  clearfilter();
