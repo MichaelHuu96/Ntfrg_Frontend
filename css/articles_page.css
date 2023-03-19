@@ -36,15 +36,13 @@ min-width: 30vw;
   }
 
   .search_bar{
-    margin-top: 5rem;
+    margin-top: 2rem;
     width: 70vw;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .card-footer{
-    flex-direction: row;
-  }
+
 
   .date_text{
     width: auto;
@@ -54,6 +52,9 @@ min-width: 30vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap ;
+    flex-direction: row;
+
   }
   
   .footer-left {
@@ -85,4 +86,43 @@ min-width: 30vw;
   .card{
     max-height: fit-content;
   }
+#tag-container{
+  margin: 6px;
 
+}
+
+  .inspect-article-container{
+    height: 80vh;
+    overflow: hidden;
+  }
+
+
+.article_lib{
+ margin: 10px;     
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0;
+}
+
+.inspect_text{
+  max-height: 60vh;
+  overflow: scroll;
+}
+
+.inspect_card{
+  position: sticky;
+  top: 4rem;
+  
+}
+
+.category_tag{
+  margin: 2px;
+  height: 30px;
+  width: auto;
+  font-size: smaller;
+  padding: 3px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
