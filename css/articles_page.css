@@ -2,18 +2,22 @@ a {
   color: black;
   text-decoration: none important;
 }
-
+body{
+  padding-top: 100px;
+}
 
 .card-body{
     overflow: hidden;
     text-overflow: ellipsis;
-    height: 400px;
+    height: auto;
+min-width: 30vw;
   }
   
   #articles-container{
   width: 80%;
-  padding-top: 5%;
   margin: auto;
+
+  
   }
 
   .basic{
@@ -21,3 +25,104 @@ a {
     display: flex;
     justify-content: center;
   }
+
+  .article_card{
+    margin: 20px;
+  }
+
+  .card-text{
+    max-height:100px ;
+    overflow: hidden;
+  }
+
+  .search_bar{
+    margin-top: 2rem;
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+
+  .date_text{
+    width: auto;
+  }
+
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap ;
+    flex-direction: row;
+
+  }
+  
+  .footer-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-left p {
+    margin-right: 10px;
+  }
+  
+  .footer-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-right span {
+    margin-left: 10px;
+  }
+
+  .catergory_tag{
+    margin: 1px;
+    width: auto;
+    height: auto;
+    font-size: 12px;
+   
+  }
+
+  .card{
+    max-height: fit-content;
+  }
+#tag-container{
+  margin: 6px;
+
+}
+
+  .inspect-article-container{
+    height: 80vh;
+    overflow: hidden;
+  }
+
+
+.article_lib{
+ margin: 10px;     
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0;
+}
+
+.inspect_text{
+  max-height: 60vh;
+  overflow: scroll;
+}
+
+.inspect_card{
+  position: sticky;
+  top: 4rem;
+  
+}
+
+.category_tag{
+  margin: 2px;
+  height: 30px;
+  width: auto;
+  font-size: smaller;
+  padding: 3px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
