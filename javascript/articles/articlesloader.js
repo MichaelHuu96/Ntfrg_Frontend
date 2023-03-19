@@ -81,9 +81,9 @@ fetch('articles.json')
     let tagsHTML = ''; // initialize empty string for tags
     if (article.tags.length > 0) { // check if tags exist
       for (let i = 0; i < article.tags.length; i++) {
-        tagsHTML += `<a href="#" class="btn btn-secondary btn-lg category_tag" role="button">${article.tags[i]}</a>`;
+          tagsHTML += `<a class="btn btn-secondary btn-lg category_tag" role="button" onclick="searchtags('${article.tags[i]}')">${article.tags[i]}</a>`;
       }
-    }
+  }
     inspect_tags.innerHTML = ''; // clear previous tags
     inspect_tags.insertAdjacentHTML('beforeend', tagsHTML);
 
@@ -112,9 +112,9 @@ function searchtags(searchtag){
     let tagsHTML = ''; // initialize empty string for tags
     if (article.tags.length > 0) { // check if tags exist
       for (let i = 0; i < article.tags.length; i++) {
-        tagsHTML += `<a href="#" class="btn btn-secondary btn-lg  category_tag" role="button" >${article.tags[i]}</a>`;
+          tagsHTML += `<a class="btn btn-secondary btn-lg category_tag" role="button" onclick="searchtags('${article.tags[i]}')">${article.tags[i]}</a>`;
       }
-    }
+  }
     articleCard.innerHTML = `
     
 
@@ -167,9 +167,9 @@ function searchtags(searchtag){
       let tagsHTML = ''; // initialize empty string for tags
       if (article.tags.length > 0) { // check if tags exist
         for (let i = 0; i < article.tags.length; i++) {
-          tagsHTML += `<a href="#" class="btn btn-secondary btn-lg  category_tag" role="button" >${article.tags[i]}</a>`;
+            tagsHTML += `<a class="btn btn-secondary btn-lg category_tag" role="button" onclick="searchtags('${article.tags[i]}')">${article.tags[i]}</a>`;
         }
-      }
+    }
       articleCard.innerHTML = `
       
 
