@@ -14,8 +14,9 @@ min-width: 30vw;
   }
   
   #articles-container{
-  width: 80%;
+  width: 70%;
   margin: auto;
+  transition: width 2s;
 
   
   }
@@ -126,3 +127,4 @@ min-width: 30vw;
   padding-left: 7px;
   padding-right: 7px;
 }
+

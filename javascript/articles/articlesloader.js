@@ -15,7 +15,7 @@ fetch('articles.json')
         }
       }
 
-     
+
       articleCard.innerHTML = `
       
 
@@ -46,12 +46,17 @@ fetch('articles.json')
   })
   .catch(error => console.error(error));
 
+
+  var inspected_article = ""; 
+
   function inspect_article(id) {
 
     fetch('articles.json?id='+id+'')
   .then(response => response.json())
   .then(data => {
+  
     const article = data.articles.filter(article => article.ID === id)[0];
+    inspected_article=article;
     const inspect_article_container = document.getElementById("inspect-article-container");
     const article_container = document.getElementById("articles-container");
     const inspect_title = document.querySelector('.inspect_title');
@@ -83,7 +88,10 @@ fetch('articles.json')
   
 
 
-
+function go_to_article(){
+console.log(inspected_article);
+window.location.href = "article.html?id=" + inspected_article.ID;
+}
 
 
   function changeCardTextHeight(article) {
