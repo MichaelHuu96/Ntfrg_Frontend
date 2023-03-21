@@ -30,11 +30,12 @@ fetch('articles.json')
             <div class="card-body ">
               <h4 class="card-title">${article.title}</h4>
               <h6 class="card-subtitle mb-2 text-muted">${article.author}</h6>
+              <h8 class="date_text text-muted">March 17, 2023</h8>
               <p id="card-text-${article.ID}" class="card-text">${article.content}</p>
             </div>
             <div class="card-footer">
               <div class="footer-left">
-                <p class="date_text">March 17, 2023</p>
+           
               </div>
               <div class="footer-right">
                 <div id="tag-container">
@@ -125,11 +126,12 @@ function searchtags(searchtag){
           <div class="card-body ">
             <h4 class="card-title">${article.title}</h4>
             <h6 class="card-subtitle mb-2 text-muted">${article.author}</h6>
+            <h7 class="date_text text-muted">March 17, 2023</h7>
             <p id="card-text-${article.ID}" class="card-text">${article.content}</p>
           </div>
           <div class="card-footer">
             <div class="footer-left">
-              <p class="date_text">March 17, 2023</p>
+        
             </div>
             <div class="footer-right">
               <div id="tag-container">
@@ -180,11 +182,12 @@ function searchtags(searchtag){
             <div class="card-body ">
               <h4 class="card-title">${article.title}</h4>
               <h6 class="card-subtitle mb-2 text-muted">${article.author}</h6>
+              <h7 class="date_text text-muted">March 17, 2023</h7>
               <p id="card-text-${article.ID}" class="card-text">${article.content}</p>
             </div>
             <div class="card-footer">
               <div class="footer-left">
-                <p class="date_text">March 17, 2023</p>
+            
               </div>
               <div class="footer-right">
                 <div id="tag-container">

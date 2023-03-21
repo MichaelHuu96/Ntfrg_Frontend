@@ -55,6 +55,8 @@ min-width: 30vw;
     align-items: center;
     flex-wrap: wrap ;
     flex-direction: row;
+    max-height: 100px;
+    overflow: scroll;
 
   }
   
@@ -92,9 +94,8 @@ min-width: 30vw;
 
 }
 
-  .inspect-article-container{
-    height: 80vh;
-    overflow: hidden;
+  #inspect-article-container{
+
   }
 
 
@@ -115,6 +116,8 @@ min-width: 30vw;
 .inspect_card{
   position: sticky;
   top: 4rem;
+  height: 90vh  ;
+ 
   
 }
 
