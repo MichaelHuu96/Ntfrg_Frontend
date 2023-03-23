@@ -1,0 +1,16 @@
+.keyfeatures_icon {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+  }
+  
+  .keyfeature_element {
+    max-width: 325px;
+    height: auto;
+    margin: 30px 20px; /* add margin to top and bottom, and left and right */
+    text-align: center;
+  }
+  

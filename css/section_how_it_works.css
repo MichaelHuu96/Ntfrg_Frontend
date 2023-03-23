@@ -1,0 +1,33 @@
+
+
+.how_it_works_img{
+    background-color: darkgray !important;
+    width:400px;
+    height: 400px;
+    margin: auto auto; /* center the div horizontally */
+    max-width: 500px;
+}
+
+.how_it_works_content{
+    min-width: 70vw;
+    padding: 10%;
+    margin: 0 auto; /* center the div horizontally */
+}
+
+.how_it_works_text_content{
+    margin: auto auto;
+    padding: 20px;
+    width: 100%;
+
+}
+.how_it_works_text_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    
+}
+
+
+
