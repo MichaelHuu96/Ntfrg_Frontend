@@ -75,3 +75,7 @@ display: none;
     text-align: center
 
   }
+
+  .add_margin{
+    margin: 5%;
+  }
