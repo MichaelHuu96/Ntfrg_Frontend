@@ -12,7 +12,8 @@
 }
 
 .how_it_works_content{
-    min-width: 70vw;
+    min-width: 60vw;
+    width: 80vw;
     padding: 10%;
     margin: 0 auto; /* center the div horizontally */
 }
@@ -27,8 +28,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     text-align: center;
+   
     
 }
 
@@ -42,3 +43,9 @@
 }
 
 
+.how_it_works_container{
+    width: auto;
+    height: auto;
+margin: 20px;
+margin-top: 2rem;
+}
