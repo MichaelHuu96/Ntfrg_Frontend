@@ -1,11 +1,11 @@
 
 
 .how_it_works_img{
-    background-color: darkgray !important;
-    width:400px;
-    height: 400px;
-    margin: auto auto; /* center the div horizontally */
+
+    width:300px;
+    height: 300px;
     max-width: 500px;
+    position: relative;
 }
 
 .how_it_works_content{
@@ -29,5 +29,13 @@
     
 }
 
+.how_it_works_image_container{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
 
