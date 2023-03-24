@@ -13,6 +13,12 @@ h1,h2 {
 h3,h4,h5,h6,h7,h8{
   font-family: Arial, Helvetica, sans-serif !important;
 }
+
+
+.logo_sm{
+  max-width: 500px;
+  height: 40px;
+}
 .welcome_text h1 {
   color: rgb(45, 45, 47);
   line-height: 80px;
