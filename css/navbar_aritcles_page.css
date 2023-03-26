@@ -79,6 +79,7 @@ button {
 }
 
 .navbar {
+  top:4px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -326,4 +327,9 @@ button {
   height: 2px;
   transform: rotate(90deg);
   background: var(--color-white-100);
+}
+
+.logo_sm{
+  max-width: 500px;
+  height: 40px;
 }

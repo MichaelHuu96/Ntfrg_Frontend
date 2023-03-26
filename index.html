@@ -5,10 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styling.css">
-    <link rel="stylesheet" href="css/navbar_aritcles_page.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="css/styling.css">
+    <link rel="stylesheet" href="css/navbar_aritcles_page.css">
+
+    <title>Nutgraf</title>
 
     <link rel="stylesheet" href="css/section_problem.css">
     <link rel="stylesheet" href="css/section_about_us.css">
@@ -16,16 +21,15 @@
     <link rel="stylesheet" href="css/section_keyfeatures.css">
     <link rel="stylesheet" href="css/section_how_it_works.css">
     <link rel="stylesheet" href="css/footer.css">
-
-
-    <title>Nutgraf</title>
-
+    <link rel="stylesheet" href="css/what_is_nugraf.css">
 
 
 
 </head>
 
 <body>
+
+
 
     <header class="header" id="header">
         <nav class="navbar container ">
@@ -38,11 +42,12 @@
             </div>
             <div class="menu" id="menu">
                 <ul class="menu-inner">
-                    <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Feature</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">About us</a>
+                    <li class="menu-item"><a href="#section_welcome" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="#section_what_is_nutgraf" class="menu-link">Solution</a></li>
+                    <li class="menu-item"><a href="#section_keyfeatures" class="menu-link">Techonology</a>
                     </li>
-                    <li class="menu-item"><a href="#" class="menu-link">Support</a></li>
+                    <li class="menu-item"><a href="#section_solution" class="menu-link">Demo</a></li>
+                    <li class="menu-item"><a href="#section_about_us" class="menu-link">Contact us</a></li>
                 </ul>
             </div>
             <a href="pages/article_library.html" class="menu-block">Article library</a>
@@ -69,10 +74,48 @@
 
     </section>
 
-    <section id="section_keyfeatures">
+
+    <section id="section_what_is_nutgraf">
         <div class="top_trasition_bar"></div>
+
+        <div class="what_is_nutgraf_content">
+
+
+            <div class="what_is_nutgraf_container row">
+                <div class="how_it_works_image_container col-md-6 col-sm-12">
+                    <img src="Asset/G_How_it_works/Summarisation.png" class="how_it_works_img" alt="">
+                </div>
+
+                <div class="how_it_works_text_section col-md-6 col-sm-12">
+                    <div class="what_is_nutgraf_text_content">
+                        <h2>
+                            What is nutgraf AI?
+                        </h2>
+                        <h6>nutgraf AI is a research tool that helps you analyse large amounts of text at ease.
+                            Reliably.
+                            Only using information from trackable sources. <br> <br>
+
+                            Using the powerful tool of Artificial Intelligence, nutgraf AI can digest hundreds of
+                            articles
+                            and highlight the key points based on your questions. <br> <br>
+
+                            After finding the most relevant threads of the researched topic, you can read you can read
+                            the
+                            original source to avoid nonsense.</h6>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="section_keyfeatures">
+
         <div class="title_text">
-            <h1>Key features</h1>
+            <h1>Technology</h1>
         </div>
         <div class="problem_content row">
 
@@ -80,25 +123,50 @@
 
             <div class="keyfeature_element col">
                 <img src="Asset/D_keyfeatuers/contract.png" alt="" class="keyfeatures_icon">
-                <h2>Get an overview</h2>
-                <h7>Summarize long and complex articles in a length of your choice and extract keywords, independent of
-                    their language.
+                <h2>Embeddings</h2>
+                <h7>We create abstract embeddings of the articles in our database, where every article is described by a
+                    small number of focal features.
                 </h7>
             </div>
 
             <div class="keyfeature_element col">
                 <img src="Asset/D_keyfeatuers/benchmarking.png" alt="" class="keyfeatures_icon">
-                <h2>Compare </h2>
-                <h7>Get a comparison of articles, independent of their language</h7>
+                <h2>Search</h2>
+                <h7>Search an article database based on natural language, in a similar way as you would interact with
+                    any modern chatbot.</h7>
             </div>
 
             <div class="keyfeature_element col">
                 <img src="Asset/D_keyfeatuers/cluster.png" alt="" class="keyfeatures_icon">
-                <h2>Find more articles </h2>
-                <h7>Browse through the embedding space to find similar or contrasting articles</h7>
+                <h2>Summarization</h2>
+                <h7>We outline the most important information based on hundreds of articles that are relevant to your
+                    search.</h7>
             </div>
         </div>
+        <div class="problem_content row">
 
+
+
+            <div class="keyfeature_element col">
+                <img src="Asset/D_keyfeatuers/contract.png" alt="" class="keyfeatures_icon">
+                <h2>Clustering</h2>
+                <h7>We create clusters among the articles that are relevant to your search.
+                </h7>
+            </div>
+
+            <div class="keyfeature_element col">
+                <img src="Asset/D_keyfeatuers/benchmarking.png" alt="" class="keyfeatures_icon">
+                <h2>Translation</h2>
+                <h7>We display the outlines on your chosen language.</h7>
+            </div>
+
+            <div class="keyfeature_element col">
+                <img src="Asset/D_keyfeatuers/cluster.png" alt="" class="keyfeatures_icon">
+                <h2>Retrieval</h2>
+                <h7>Look at the source articles that the part of our outlines that you find most interesting come from.
+                </h7>
+            </div>
+        </div>
     </section>
 
     <section id="section_how_it_works" class="how_it_works_content">

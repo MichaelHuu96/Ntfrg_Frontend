@@ -1,0 +1,45 @@
+#section_what_is_nutgraf {
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .top_trasition_bar {
+    width: 100vw;
+    height: 8vh;
+    position: relative;
+    background-color:#505050;
+    position: absolute;
+  }
+  
+  .what_is_nutgraf_content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin: 0 auto;
+  }
+  
+  .what_is_nutgraf_text_content {
+    text-align: left;
+  }
+  
+  .what_is_nutgraf_container {
+    width: 80vw;
+    margin: 0 auto;
+  }
+  
+  .how_it_works_image_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .how_it_works_img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .what_is_nutgraf_text_content h6{
+    font-size: 20px;
+  }
