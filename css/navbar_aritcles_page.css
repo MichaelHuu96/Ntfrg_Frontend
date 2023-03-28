@@ -101,7 +101,6 @@ button {
   line-height: 1.5;
   letter-spacing: -1px;
   color: var(--color-white-100);
-  text-transform: uppercase;
 }
 
 .menu {
@@ -134,7 +133,6 @@ button {
   font-weight: 500;
   line-height: 1.5;
   color: var(--color-white-100);
-  text-transform: uppercase;
   transition: all 0.3s ease;
 }
 .menu-block {
@@ -149,7 +147,6 @@ button {
   margin-left: auto;
   padding: 0.65rem 1.5rem;
   border-radius: 3rem;
-  text-transform: capitalize;
   
   color: aliceblue;  
   background-color:#383838;
@@ -175,9 +172,7 @@ button {
     column-gap: 2rem;
     margin: 0 auto;
   }
-  .menu-link {
-    text-transform: capitalize;
-  }
+
   .menu-block {
     margin-left: 2rem;
   }
